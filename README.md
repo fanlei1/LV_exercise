@@ -3,4 +3,7 @@ Cardiac-coronary coupling for simulating exercise
 
 Simulation protocol 
 
-Run case_baseline.m to simulate graded exercise for health 
+Run simulation for graded exercise for health case_baseline.m [case_baseline](case_baseline.m)  
+```
+case_baseline.m
+```
