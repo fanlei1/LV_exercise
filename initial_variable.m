@@ -1,0 +1,21 @@
+function fm = initial_variable(network_matrix)
+mo = network_matrix(:,7);         % mother index
+si = network_matrix(:,8);         % sister1
+si2 = network_matrix(:,9);        % sister2
+da1 = network_matrix(:,12);       % daughter1
+da2 = network_matrix(:,13);       % daughter2
+da3 = network_matrix(:,14);       % daughter3 if any
+fm.Gnt_loc=find(da1>0 & mo>0);    % Non terminal vessels
+fm.Gt_loc = find(da1==0);         % Terminal vessels
+fm.mo = mo(fm.Gnt_loc);           % non-terminal vessels' mothers' index          %
+fm.si = si(fm.Gnt_loc);           % non-terminal vessels' sister1' index
+fm.si2 = find(si2(fm.Gnt_loc)>0); % find veseels who have sister2
+fm.si2index = nonzeros(si2(fm.Gnt_loc));
+fm.da1 = da1(fm.Gnt_loc);         % non-terminal vessels' daughter1' index
+fm.da2 = da2(fm.Gnt_loc);         % non-terminal vessels' daughter2' index
+fm.da3 = find(da3(fm.Gnt_loc)>0); % find vessels who have daughter3
+fm.da3index = nonzeros(da3(fm.Gnt_loc)); % find the nonzero daughter3
+fm.mo_t = mo(fm.Gt_loc);          % terminal vessels' mothers' index
+fm.si_t = si(fm.Gt_loc);          % terminal vessels' sister1' index
+fm.si2_t = find(si2(fm.Gt_loc)>0);% terminal vessels' who have sister2
+fm.si2tindex = nonzeros(si2(fm.Gt_loc));
