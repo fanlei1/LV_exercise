@@ -31,7 +31,15 @@ and use plot_stenosis_degree.m [plot_stenosis_degree](plot_stenosis_degree.m) to
 ```
 plot_stenosis_degree.m
 ```
-3. Run simulation for metabolic dysfunction case under regulated condition case_metabolism_HR_reg.m [case_metabolism_HR_reg](case_metabolism_HR_reg.m)  
+3. Run simulation for mechanical inefficiency case under regulated condition case_efficiency_HR_reg.m [case_efficiency_HR_reg](case_efficiency_HR_reg.m) 
+```
+case_efficiency_HR_reg.m
+```
+and passive condition case_efficiency_HR_pas.m [case_efficiency_HR_pas](case_efficiency_HR_pas.m)
+```
+case_efficiency_HR_pas.m
+```
+4. Run simulation for metabolic dysfunction case under regulated condition case_metabolism_HR_reg.m [case_metabolism_HR_reg](case_metabolism_HR_reg.m)  
 ```
 case_metabolism_HR_reg.m
 ```
@@ -39,7 +47,7 @@ and passive condition case_metabolism_HR_pas.m [case_metabolism_HR_pas](case_met
 ```
 case_metabolism_HR_pas.m
 ```
-use plot_meta_effi.m [plot_meta_effi](plot_meta_effi.m) to plot results from metabolic dysfunction case
+use plot_meta_effi.m [plot_meta_effi](plot_meta_effi.m) to plot results from metabolic dysfunction and mechanical inefficiency cases
 ```
 plot_meta_effi.m
 ```
