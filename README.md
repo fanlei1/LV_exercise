@@ -31,3 +31,15 @@ and use plot_stenosis_degree.m [plot_stenosis_degree](plot_stenosis_degree.m) to
 ```
 plot_stenosis_degree.m
 ```
+3. Run simulation for metabolic dysfunction case under regulated condition case_metabolism_HR_reg.m [case_metabolism_HR_reg](case_metabolism_HR_reg.m)  
+```
+case_metabolism_HR_reg.m
+```
+and passive condition case_metabolism_HR_pas.m [case_metabolism_HR_pas](case_metabolism_HR_pas.m)
+```
+case_metabolism_HR_pas.m
+```
+use plot_meta_effi.m [plot_meta_effi](plot_meta_effi.m) to plot results from metabolic dysfunction case
+```
+plot_meta_effi.m
+```
