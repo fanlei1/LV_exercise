@@ -23,3 +23,11 @@ and passive condition case_stenosis_HR_pas.m [case_stenosis_HR_pas](case_stenosi
 ```
 case_stenosis_HR_pas.m
 ```
+use plot_stenosis.m [plot_stenosis](plot_stenosis.m) to plot waveforms from each stenosis case 
+```
+plot_stenosis.m
+```
+and use plot_stenosis_degree.m [plot_stenosis_degree](plot_stenosis_degree.m) to plot results from stenosis case with different degrees
+```
+plot_stenosis_degree.m
+```
