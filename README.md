@@ -15,3 +15,11 @@ use plot_baseline.m [plot_baseline](plot_baseline.m) to plot results from baseli
 ```
 plot_baseline.m
 ```
+Run simulation for stenosis case under regulated condition case_stenosis_HR_reg.m [case_stenosis_HR_reg](case_stenosis_HR_reg.m)  
+```
+case_stenosis_HR_reg.m
+```
+and passive condition case_stenosis_HR_pas.m [case_stenosis_HR_pas](case_stenosis_HR_pas.m)
+```
+case_stenosis_HR_pas.m
+```
