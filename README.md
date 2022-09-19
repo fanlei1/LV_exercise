@@ -11,3 +11,7 @@ and passive condition case_baseline_pas.m [case_baseline_pas](case_baseline_pas.
 ```
 case_baseline_pas.m
 ```
+use plot_baseline.m [plot_baseline](plot_baseline.m) to plot results from baseline case
+```
+plot_baseline.m
+```
