@@ -151,8 +151,8 @@ for i=1:1:length(ts)-1
     end
     t_la = ts(i)-(cycle_la-1)*BCL;
     Pla = e(t_la,Tmax_la,tau_la,trans_la).*Ees_la.*(Vla - V0_la) + (1 - e(t_la,Tmax_la,tau_la,trans_la)).*A_la.*(exp(B_la*(Vla - V0_la)) - 1);
-    Elv(i) = e(t_LV,Tmax_LV,tau_LV, trans_LV);    
-    IMP(i) = alpha*Ees_LV*Elv(i)+PLV*gamma;     
+    Elv(i) = e(t_LV,Tmax_LV,tau_LV, trans_LV); 
+    IMP(i) = PLV*0.6+3*Ees_LV*Elv(i)+40*(1-VLV/114)/0.0075;
     meandeltaP = mean(deltaP_,1);
     meantau    = mean(tau_,1);
     [Qi, deltaP, tau, C, G, Rat] = flow_analysis(Fmeta, i, ts*0.001, Part, Pvc, IMP, meandeltaP, meantau, G_, C_, Rat_, network_matrix, dt*0.001, fm, ind, indx, cond_leng);  
